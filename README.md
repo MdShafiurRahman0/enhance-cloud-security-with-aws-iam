@@ -56,25 +56,60 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 ![image](https://github.com/MdShafiurRahman0/enhance-cloud-security-with-aws-iam/assets/113176437/5080daa4-b937-496c-9620-5882b4749922)
 
 
-This policy allows some actions (like starting, stopping, and describing EC2 instances) for instances tagged with "Env = development" while denying the ability to create or delete tags for all instances.
 
-An extra for the curious: how JSON policies are structured Version
-‍This means 2012-10-17 is the date of the latest policy version. This tells you whether the policy is up to date with the latest standards and practices.
+{    
+  "Version": "2012-10-17",    
+  "Statement": [        
+    {            
+      "Effect": "Allow",            
+      "Action": "ec2:*",            
+      "Resource": "*",            
+      "Condition": {                
+        "StringEquals": {                    
+          "ec2:ResourceTag/Env": "development"                
+        }            
+      }        
+    },        
+    {            
+      "Effect": "Allow",            
+      "Action": "ec2:Describe*",            
+      "Resource": "*"        
+    },        
+    {            
+      "Effect": "Deny",            
+      "Action": [                
+        "ec2:DeleteTags",                
+        "ec2:CreateTags"            
+      ],            
+      "Resource": "*"        
+    }    
+  ] 
+}
 
-‍Statement
+
+
+1. This policy allows some actions (like starting, stopping, and describing EC2 instances) for instances tagged with "Env = development" while denying the ability to create or delete tags for all instances.
+
+2. An extra for the curious: how JSON policies are structured Version
+
+3‍.This means 2012-10-17 is the date of the latest policy version. This tells you whether the policy is up to date with the latest standards and practices.
+
+4‍. Statement
 ‍The main part of the policy structure and defines a list of permissions.
 
-‍Effect
+5‍. Effect
 ‍This can have two values - either Allow or Deny - to indicate whether the policy allows or denies a certain action. Deny has priority. Looking at the first statement, "Effect": "Allow" means this statement is trying to allow for an action.
 
-‍Action
+6‍. Action
 ‍A list of the actions that the policy allows or denies. In this case, "Action": "ec2:*" means all actions that you could possibly take on EC2 instances are allowed. Woohoo!
 
-‍Resource
+7‍. Resource
 ‍Which resources does this policy apply to? Specifying "*" means all resources within the defined scope (see the next point).
 
-Condition Block (optional)
+8. Condition Block (optional)
 ‍The circumstances under which the policy is in action. In this case, the condition is that the resource is tagged Env - development. This means specifying "Resource": "*" in the line above means all resources with the Env - development tag are impacted by your statement.
+
+
 
 ![2024-07-09_17h30_41](https://github.com/MdShafiurRahman0/enhance-cloud-security-with-aws-iam/assets/113176437/c5d79ec3-8f6d-47dc-9ac7-8500d457d0c1)
 
@@ -87,14 +122,6 @@ Condition Block (optional)
 
 
 
-1.Log in to your AWS Account.
-2.In the AWS Management Console, search for S3.
-3.Choose Create bucket.
-4.AWS Region: select the Region closest to you.
-5.For Object Ownership, choose ACLs enabled.
-6.Choose Bucket owner preferred.
-7.For Block Public Access settings for this bucket, clear the check box for Block all public access.
-8.For Bucket Versioning, choose Enable.
 
 💡
 
