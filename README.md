@@ -129,13 +129,6 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 
 
 
-![2024-07-07_16h48_32](https://github.com/MdShafiurRahman0/host-a-website-on-aws-S3/assets/113176437/5dab4e3f-911f-45bb-ab40-eff51f4f5d89)
-
-![2024-07-07_17h17_08](https://github.com/MdShafiurRahman0/host-a-website-on-aws-S3/assets/113176437/181ed07d-5754-40b3-aba1-298248af72d6)
-
-![image](https://github.com/MdShafiurRahman0/host-a-website-on-aws-S3/assets/113176437/2da1daf8-a084-4183-838f-c141e9109826)
-
-
 
 
 
