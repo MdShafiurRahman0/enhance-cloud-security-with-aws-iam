@@ -152,7 +152,7 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 
 
 
-### Step 3: Create IAM Users and User Groups
+### Step 4: Create IAM Users and User Groups
 
 1.Choose User groups in your left-hand navigation panel.
 
@@ -176,7 +176,7 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 
 
 
-### Step 4: Test  user's access
+### Step 5: Test  user's access
 
 
 ![2024-07-09_22h28_47](https://github.com/MdShafiurRahman0/enhance-cloud-security-with-aws-iam/assets/113176437/9b5293b4-7760-43d9-a9d9-231b9c28f4b5)
