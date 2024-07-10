@@ -56,7 +56,7 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 ![image](https://github.com/MdShafiurRahman0/enhance-cloud-security-with-aws-iam/assets/113176437/5080daa4-b937-496c-9620-5882b4749922)
 
 
-
+```json
 {    
   "Version": "2012-10-17",    
   "Statement": [        
@@ -85,6 +85,8 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
     }    
   ] 
 }
+```
+
 
 
 
