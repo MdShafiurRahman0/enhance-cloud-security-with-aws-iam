@@ -8,7 +8,7 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 
 
 
-###  Projecct Design & High Level Technical Overview:
+### Project Design & High Level Technical Overview:
 
 
 ![image](https://github.com/MdShafiurRahman0/enhance-cloud-security-with-aws-iam/assets/113176437/6674d174-fa42-454c-a921-9f48f49cb1d5)
@@ -22,7 +22,7 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 🔖 AWS Account Alias
 
 
-### Step 1: Create 2 Instance's  one for devlopment and production & Add  tag for your EC2 instance
+### Step 1: Create 2 Instance's  one for devlopment and production & Add tag for your EC2 instance
 
 
 ![2024-07-09_17h09_51](https://github.com/MdShafiurRahman0/enhance-cloud-security-with-aws-iam/assets/113176437/ff1f992d-f7c1-4cce-9dbd-2c2e9e598f7d)
@@ -159,6 +159,7 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 2.Choose Create group.
 
 3.Let's create your first user group!
+
 
 ![2024-07-09_19h47_31](https://github.com/MdShafiurRahman0/enhance-cloud-security-with-aws-iam/assets/113176437/f70a8f43-0252-419a-b4eb-e2397932c549)
 
