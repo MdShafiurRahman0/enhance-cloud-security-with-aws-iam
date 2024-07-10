@@ -1,4 +1,4 @@
-## Enhance Cloud Security with AWS IAM
+### Enhance Cloud Security with AWS IAM
 
 
 You've just joined our dynamic team as a DevOps engineer, and we're thrilled to have you on board.👋
@@ -8,13 +8,13 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 
 
 
-##  Projecct Design & High Level Technical Overview:
+###  Projecct Design & High Level Technical Overview:
 
 
 ![image](https://github.com/MdShafiurRahman0/enhance-cloud-security-with-aws-iam/assets/113176437/6674d174-fa42-454c-a921-9f48f49cb1d5)
 
 
-## Get ready to create (and learn from scratch):
+### Get ready to create (and learn from scratch):
 
 💻 EC2 instances
 📏 IAM Policies
@@ -90,6 +90,8 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 
 
 
+
+
 1. This policy allows some actions (like starting, stopping, and describing EC2 instances) for instances tagged with "Env = development" while denying the ability to create or delete tags for all instances.
 
 2. An extra for the curious: how JSON policies are structured Version
@@ -108,6 +110,7 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 7‍. Resource
 ‍Which resources does this policy apply to? Specifying "*" means all resources within the defined scope (see the next point).
 
+
 8. Condition Block (optional)
 ‍The circumstances under which the policy is in action. In this case, the condition is that the resource is tagged Env - development. This means specifying "Resource": "*" in the line above means all resources with the Env - development tag are impacted by your statement.
 
@@ -125,7 +128,6 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 
 
 
-💡
 
 ![2024-07-07_16h48_32](https://github.com/MdShafiurRahman0/host-a-website-on-aws-S3/assets/113176437/5dab4e3f-911f-45bb-ab40-eff51f4f5d89)
 
@@ -153,7 +155,9 @@ You've just joined our dynamic team as a DevOps engineer, and we're thrilled to 
 ### Step 3: Create IAM Users and User Groups
 
 1.Choose User groups in your left-hand navigation panel.
+
 2.Choose Create group.
+
 3.Let's create your first user group!
 
 ![2024-07-09_19h47_31](https://github.com/MdShafiurRahman0/enhance-cloud-security-with-aws-iam/assets/113176437/f70a8f43-0252-419a-b4eb-e2397932c549)
@@ -214,7 +218,7 @@ Woahhhhh, you even get to see exactly which statement in the IAM policy you've c
 
 
 
-
+### But you can delete the Devlopment instances 
 
 
 ![2024-07-09_22h49_09](https://github.com/MdShafiurRahman0/enhance-cloud-security-with-aws-iam/assets/113176437/52e59a71-39b2-43a3-9274-93da690238ba)
